@@ -24,4 +24,4 @@ This project is an extended, refactored prototype of the Smart Campus Room Avail
 - **Student:** Shointay Aigerim
 - **Course:** Software Engineering
 - **Assignment:** Assignment #04
-- **AI Tool Used:** ChatGPT / Gemini
+- **AI Tool Used:** ChatGPT 
