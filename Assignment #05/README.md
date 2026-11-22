@@ -41,3 +41,9 @@ Then open `http://localhost:8000` in your browser.
 * AC3 (Blocked rooms): Blocked rooms (`blocked: true`, e.g., Room 103) are excluded from filtered results and rejected on booking attempt.
 * AC4 (Overlaps): Overlapping intervals are rejected; touching intervals (e.g., `12:00–13:00` and `13:00–14:00`) are allowed.
 * AC5 (Filters & empty state): Filters by capacity and required equipment; displays an empty state when no rooms match.
+
+## Author & Course Info
+- **Student:** Shointay Aigerim
+- **Course:** Software Engineering
+- **Assignment:** Assignment #05
+- **AI Tool Used:** ChatGPT 
