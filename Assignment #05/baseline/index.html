@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Campus - Room Availability Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Smart Campus - Room Availability Checker</h2>
+    <p>Fixed Current Time: <b>10:00</b></p>
+    
+    <!-- Filter Section -->
+    <fieldset style="border: 1px solid #ccc; border-radius: 4px; padding: 15px; margin-bottom: 20px;">
+        <legend style="font-weight: bold; padding: 0 5px;">Room Requirements & Filters</legend>
+        
+        <div class="form-group">
+            <label for="requiredCapacity">Required Attendees (Capacity):</label>
+            <input type="number" id="requiredCapacity" value="10" min="1">
+        </div>
+
+        <div class="form-group">
+            <label>Required Equipment:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="eq" value="Projector"> Projector</label>
+                <label><input type="checkbox" name="eq" value="Whiteboard"> Whiteboard</label>
+                <label><input type="checkbox" name="eq" value="Video Conference"> Video Conference</label>
+            </div>
+        </div>
+
+        <button type="button" onclick="filterRooms()" style="background: #6c757d;">Filter Rooms</button>
+    </fieldset>
+
+    <!-- Booking Section -->
+    <div class="form-group">
+        <label for="roomSelect">Select Room:</label>
+        <select id="roomSelect"></select>
+    </div>
+
+    <div class="form-group">
+        <label for="startTime">Start Time (HH:MM):</label>
+        <input type="text" id="startTime" value="11:00">
+    </div>
+
+    <div class="form-group">
+        <label for="duration">Duration (in minutes, max 120):</label>
+        <input type="number" id="duration" value="60">
+    </div>
+
+    <button onclick="checkAvailability()">Check Availability</button>
+
+    <div id="result" class="result" style="display: none;"></div>
+    <div id="roomDetails" class="room-list"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
